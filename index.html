@@ -25,30 +25,36 @@
 
     <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
-            event.preventDefault();
+    event.preventDefault();
 
-            var formData = {
-                name: document.getElementById("name").value,
-                gender: document.getElementById("gender").value,
-                age: document.getElementById("age").value
-            };
+    var formData = {
+        name: document.getElementById("name").value,
+        gender: document.getElementById("gender").value,
+        age: document.getElementById("age").value
+    };
 
-            fetch('http://localhost:3000/submit-form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.text())
-            .then(data => {
-                console.log(data);
-                window.location.href = "kuisoner.html"; // Redirect setelah submit
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
+    fetch('http://localhost:3000/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data);
+        window.location.href = "kuisoner.html"; // Redirect setelah submit
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
     </script>
 </body>
 </html>
