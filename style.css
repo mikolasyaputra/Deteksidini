@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color: #3366cc;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+}
+
+a:hover {
+    color: #224499;
+}
+
+form {
+    max-width: 900px; /* Ubah sesuai kebutuhan Anda */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95); /* Tambahkan transparansi untuk latar belakang */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Animasi perubahan box-shadow */
+}
+
+form:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih jelas saat dihover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check-label {
+    display: inline-block; /* Menjadikan label tetap berada di sebelah kanan dari input */
+    margin-left: 10px; /* Sesuaikan margin sesuai kebutuhan */
+    color: #333;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Ubah margin jika diperlukan */
+    color: #000000;
+    font-size: 18px; /* Ukuran teks untuk label soal */
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+#hasil {
+    margin-top: 20px;
+    background: #00b7ff;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    max-width: 900px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+    margin-left: auto; /* Untuk memposisikan elemen di tengah */
+    margin-right: auto; /* Untuk memposisikan elemen di tengah */
+}
+
+#hasil:hover {
+    background: #7f7dff; /* Warna latar belakang saat dihover */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi perubahan warna latar belakang dan transformasi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan bawah tombol */
+}
+
+button:hover {
+    background: #0056b3; /* Warna latar belakang saat hover */
+    transform: translateY(-2px); /* Angkat sedikit tombol saat dihover */
+}
+
+/* Ukuran teks untuk jawaban dan radio button */
+.form-check-label,
+input[type="radio"] {
+    font-size: 15px;
+}

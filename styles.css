@@ -1,0 +1,68 @@
+/* CSS untuk form */
+#myForm {
+    width: 900px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+
+/* Style untuk label */
+label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Jarak antara label dengan input/select */
+}
+
+/* Style untuk input dan select */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Jarak antara input/select dengan elemen berikutnya */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style untuk button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk spasi antar elemen */
+br {
+    line-height: 0;
+}
+
+/* Media query untuk responsif */
+@media (max-width: 768px) {
+    #myForm {
+        width: 90%; /* Lebar form saat layar kecil */
+        max-width: 100%; /* Hapus batasan lebar maksimum */
+        height: auto; /* Tinggi otomatis sesuai konten */
+        padding: 15px; /* Padding lebih kecil untuk layar kecil */
+    }
+    
+    /* Adjust margin-bottom for smaller screens */
+    input[type="text"],
+    input[type="number"],
+    select {
+        margin-bottom: 15px; /* Jarak antara input/select dengan elemen berikutnya pada layar kecil */
+    }
+}
