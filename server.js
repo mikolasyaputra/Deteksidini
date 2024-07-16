@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname)));
 
 // Route untuk menyajikan file formlogin.html
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'formlogin.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Endpoint untuk menerima data dari form
