@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <form id="questionnaire">
     <div class="form-group mb-4">
         <label>1. Saya gelisah. Saya tidak dapat diam untuk waktu lama</label><br>
@@ -504,5 +505,40 @@
 </script>
 
 
+=======
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var formData = {
+        name: document.getElementById("name").value,
+        gender: document.getElementById("gender").value,
+        age: document.getElementById("age").value
+    };
+
+    fetch('http://localhost:3000/submit-form', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data);
+        window.location.href = "kuisoner.html"; // Redirect setelah submit
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+    </script>
+>>>>>>> 2570080608b888f33243e273c1965f5407c55927
 </body>
 </html>
