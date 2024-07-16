@@ -92,3 +92,20 @@ button:hover {
 input[type="radio"] {
     font-size: 15px;
 }
+/* Style untuk label */
+label {
+    font-weight: bold;
+    margin-bottom: 8px; /* Jarak antara label dengan input/select */
+}
+
+/* Style untuk input dan select */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Jarak antara input/select dengan elemen berikutnya */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

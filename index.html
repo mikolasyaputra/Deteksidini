@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<<<<<<< HEAD
+    <form id="myForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+        </select><br><br>
+        
+        <label for="age">Umur:</label>
+        <input type="number" id="age" name="age" required><br><br>
 <form id="questionnaire">
     <div class="form-group mb-4">
         <label>1. Saya gelisah. Saya tidak dapat diam untuk waktu lama</label><br>
@@ -43,7 +53,7 @@
     <div class="form-group mb-4">
         <label>3.Saya menjadi sangat marah dan sering tidak dapat mengendalikan kemarahan saya</label><br>
         <div class="form-check form-check-inline">
-            <input clss="form-check-input" type="radio" name="n3" id="n3_2" value="2" required>
+            <input class="form-check-input" type="radio" name="n3" id="n3_2" value="2" required>
             <label class="form-check-label" for="n3_2">Selalu benar</label>
         </div>
         <div class="form-check form-check-inline">
@@ -236,7 +246,7 @@
         </div>
     </div>
     <div class="form-group mb-4">
-        <label>16. Saya berpikir terlebih dulu akibat yang akan terjadi, sebelum berbuat atau melakukan sesuatu</label><br>
+        <label>16. Saya merasa gugup dalam situasi baru, saya mudah kehilangan rasa percaya diri</label><br>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="n16" id="n16_2" value="0" required>
             <label class="form-check-label" for="n16_2">Selalu benar</label>
@@ -505,7 +515,7 @@
 </script>
 
 
-=======
+
     <script>
         document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -539,6 +549,6 @@
 });
 
     </script>
->>>>>>> 2570080608b888f33243e273c1965f5407c55927
+
 </body>
 </html>
